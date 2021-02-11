@@ -1,13 +1,13 @@
-/* To prevent navbar fixed overlapping. Its a fixed quantity, can be improved with JS or another solution?*/
-/* body {
-    padding-top: 3.5rem; 
-} */
-/*Finally decided to use static nav bar to prevent overlapping from toggler*/
-
-.logo {
-    padding-right: 0.75rem;
+/*Full screen background image, responsive and centered*/
+body {
+    background: url("../images/employee-working.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
+/*Opacity to make the backgrounds semitransparent*/
 .navbar {
     opacity: 0.9;
 }
@@ -20,44 +20,13 @@ footer {
     opacity: 0.8;
 }
 
-.navbar-brand {
-    display: flex;
-    align-items: center;
-}
-
-/*FULL SCREEN BACKGROUND IMAGE, RESPONSIVE*/
-body {
-    background: url("../images/employee-working.jpg")no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-/*FULL SCREEN BACKGORUND IMAGE, RESPONSIVE*/
-
-footer p {
-    margin-top: 16px;
-}
-
-.main-p {
+/*Changed text alignement of the main paragraph*/
+main p {
     text-align: justify;
 }
 
-.index-main {
-    position: absolute;
-    bottom: 68%;
-    width: 100%;
-}
-
-/*team*/
-.team-main {
-    padding: 1.4% 2.4% 3.4% 2.4%;
-    height: auto;
+.background-semi-white {
     background-color: rgba(255, 255, 255, 0.507);
-}
-
-.p-team {
-    text-align: justify;
 }
 
 /*projects*/
@@ -77,28 +46,4 @@ footer p {
 .contact-main a {
     text-decoration: none;
     color: rgb(52, 72, 180);
-}
-
-@media only screen and (max-width: 600px) {
-    .index-main {
-        bottom: 56px;
-    }
-    .projects-main {
-        padding: 66% 1% 70% 1%;
-    }
-    /* fixed footer for small screens: removed fixed bot*/
-    footer {
-        position: static!important;
-        height: auto;
-    }
-    footer p {
-        padding: 16px;
-        margin: 0;
-    }
-    /*fix for footer/main absolute*/
-    .index-main {
-        position: static!important;
-        margin: 110% 0 0.5% 0;
-        width: 100%;
-    }
 }
