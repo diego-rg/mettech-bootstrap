@@ -20,30 +20,20 @@ footer {
     opacity: 0.8;
 }
 
-/*Changed text alignement of the main paragraph*/
+/*Changed text alignement of the main paragraphs*/
 main p {
     text-align: justify;
 }
 
+/*white semitransparent background for the main content*/
 .background-semi-white {
     background-color: rgba(255, 255, 255, 0.507);
 }
 
-/*projects*/
-.projects-main {
-    padding: 2.6% 1% 3% 1%;
-    height: auto;
-    background-color: rgba(255, 255, 255, 0.507);
-}
-
-/*contact*/
-.contact-main {
-    padding: 2.6% 1% 3% 1%;
-    height: auto;
-    background-color: rgba(255, 255, 255, 0.507);
-}
-
-.contact-main a {
-    text-decoration: none;
-    color: rgb(52, 72, 180);
-}
+/*Fix for the semitransparent background height in small screens*/
+@media only screen and (max-width: 768px) {
+    .background-semi-white {
+        height: auto!important;
+        min-height: 100vh;
+    }
+  }

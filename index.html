@@ -10,60 +10,62 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/mettech-css.css">
   </head>
-  <!--Body as full vw/vh container and flex to position content properly-->
-  <body class="container-fluid d-flex flex-column vw-100 vh-100 p-0">
-    <!--NavBar with logo-->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand d-flex" href="index.html"><img src="images/M.png" class="img-fluid logo pe-2" title="MetTech logo." alt="MetTech black and grey logo.">MetTech</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!--Nav div with toggler menu for small screens-->
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="team-mettech.html">Our Team</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="projects-mettech.html">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact-mettech.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!--Main content centered with auto margin-->
-    <main class="m-auto">
-      <div class="container section text-white">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-md-8 bg-dark p-2">
-            <h1 class="text-center fs-4">MetTech: superior metal fabrication</h1>
-            <p class="fs-6 p-0 m-0">We are a Galician company that fabricates a wide variety of projects, both residential and commercial. Our team excels at working with stainless steel, copper, aluminum, mild steel and galvanized. We have a wide experience constructing range hoods, custom counter tops, custom sinks, back splashes, corner guards, etc</p>
+  <!--Body with full vw/vh container and flex to position content properly-->
+  <body>
+    <div class="container-fluid d-flex flex-column vw-100 vh-100 p-0">
+      <!--NavBar with logo-->
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand d-flex" href="index.html"><img src="images/M.png" class="img-fluid logo pe-2" title="MetTech logo." alt="MetTech black and grey logo.">MetTech</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--Nav div with toggler menu for small screens-->
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="team-mettech.html">Our Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects-mettech.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact-mettech.html">Contact</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-      <div class="container">
+      </nav>
+      <!--Main content centered with auto margin-->
+      <main class="m-auto">
+        <div class="container section text-white">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-8 bg-dark p-2">
+              <h1 class="text-center fs-4">MetTech: superior metal fabrication</h1>
+              <p class="fs-6 p-0 m-0">We are a Galician company that fabricates a wide variety of projects, both residential and commercial. Our team excels at working with stainless steel, copper, aluminum, mild steel and galvanized. We have a wide experience constructing range hoods, custom counter tops, custom sinks, back splashes, corner guards, etc</p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col text-center p-3">
+              <a href="contact-mettech.html" class="btn btn-info btn text-white" role="button">Order a project</a>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!--Footer-->
+      <footer class="container-fluid text-center text-white bg-dark py-3">
         <div class="row">
-          <div class="col text-center p-3">
-            <a href="contact-mettech.html" class="btn btn-info btn text-white" role="button">Order a project</a>
+          <div class="column">
+            © Copyright 2021 MetTech
           </div>
         </div>
-      </div>
-    </main>
-    <!--Footer-->
-    <footer class="container-fluid text-center text-white bg-dark py-3">
-      <div class="row">
-        <div class="column">
-          © Copyright 2021 MetTech
-        </div>
-      </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    </div>
   </body>
 </html>
